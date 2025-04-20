@@ -87,5 +87,16 @@ Any commercial use should get formal permission first.
 
 ## Citation
 If you find our repo useful for your research, please cite us:
+@article{Murtaza2025,
+  title = {WaveLiteDehaze‐Network: A Low‐Parameter Wavelet‐Based Method for Real‐Time Dehazing},
+  ISSN = {2468-2322},
+  url = {http://dx.doi.org/10.1049/cit2.70011},
+  DOI = {10.1049/cit2.70011},
+  journal = {CAAI Transactions on Intelligence Technology},
+  publisher = {Institution of Engineering and Technology (IET)},
+  author = {Murtaza,  Ali and Khairuddin,  Uswah and Mohd Faudzi,  Ahmad ’Athif and Hamamoto,  Kazuhiko and Fang,  Yang and Omar,  Zaid},
+  year = {2025},
+  month = apr 
+}
 
 
