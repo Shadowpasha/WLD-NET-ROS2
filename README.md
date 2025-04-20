@@ -85,18 +85,22 @@ Licensed under a [Creative Commons Attribution-NonCommercial 4.0 International](
 Any commercial use should get formal permission first.
 
 
-## Citation
+## 📄 Citation
+
 If you find our repo useful for your research, please cite us:
+
+```bibtex
 @article{Murtaza2025,
-  title = {WaveLiteDehaze‐Network: A Low‐Parameter Wavelet‐Based Method for Real‐Time Dehazing},
-  ISSN = {2468-2322},
-  url = {http://dx.doi.org/10.1049/cit2.70011},
-  DOI = {10.1049/cit2.70011},
-  journal = {CAAI Transactions on Intelligence Technology},
+  title     = {WaveLiteDehaze‐Network: A Low‐Parameter Wavelet‐Based Method for Real‐Time Dehazing},
+  author    = {Murtaza,  Ali and Khairuddin,  Uswah and Mohd Faudzi,  Ahmad ’Athif and Hamamoto,  Kazuhiko and Fang,  Yang and Omar,  Zaid},
+  journal   = {CAAI Transactions on Intelligence Technology},
   publisher = {Institution of Engineering and Technology (IET)},
-  author = {Murtaza,  Ali and Khairuddin,  Uswah and Mohd Faudzi,  Ahmad ’Athif and Hamamoto,  Kazuhiko and Fang,  Yang and Omar,  Zaid},
-  year = {2025},
-  month = apr 
+  year      = {2025},
+  month     = apr,
+  ISSN      = {2468-2322},
+  doi       = {10.1049/cit2.70011},
+  url       = {http://dx.doi.org/10.1049/cit2.70011}
 }
+
 
 
