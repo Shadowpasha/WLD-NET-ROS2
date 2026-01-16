@@ -1,3 +1,62 @@
+# ROS 2 Package: wld_net
+
+This package is a ROS 2 wrapper for [WLD-Net](https://github.com/AliMurtaza29/WLD-Net), providing real-time image dehazing nodes.
+
+## Installation
+
+1.  Clone this repository into your ROS 2 workspace `src` directory.
+2.  Install dependencies:
+    ```bash
+    pip install torch torchvision opencv-python
+    rosdep install --from-paths src --ignore-src -r -y
+    ```
+3.  Build the package:
+    ```bash
+    colcon build --packages-select wld_net
+    ```
+4.  Source the workspace:
+    ```bash
+    source install/setup.bash
+    ```
+
+## Usage
+
+### 1. Video Dehazing Node
+Dehaze a video file and publish the result.
+
+```bash
+ros2 run wld_net video_dehazing_node --ros-args -p video_path:=/path/to/video.mp4
+```
+**Parameters:**
+*   `video_path` (string): Path to the video file. Defaults to included example video if not provided.
+*   `model_path` (string): Path to the `.pth` model file. Defaults to included model.
+*   `output_topic` (string): Topic to publish dehazed images. Default: `/camera/image_dehazed`.
+*   `loop` (bool): Whether to loop the video. Default: `True`.
+
+### 2. Webcam Dehazing Node
+Dehaze a live webcam feed.
+
+```bash
+ros2 run wld_net webcam_dehazing_node --ros-args -p device_id:=0
+```
+**Parameters:**
+*   `device_id` (int): Webcam device ID. Default: `0`.
+*   `model_path` (string): Path to the `.pth` model.
+*   `output_topic` (string): Topic to publish dehazed images.
+
+### 3. Image Topic Dehazing Node
+Subscribe to an image topic and publish the dehazed output.
+
+```bash
+ros2 run wld_net dehazing_node --ros-args -p input_topic:=/camera/image_raw
+```
+**Parameters:**
+*   `input_topic` (string): Input image topic. Default: `/camera/image_raw`.
+*   `output_topic` (string): Output image topic. Default: `/camera/image_dehazed`.
+*   `model_path` (string): Path to the `.pth` model.
+
+---
+
 # WaveLiteDehaze‐Network: A Low‐Parameter Wavelet Based Method for Real‐Time Dehazing
 
 This is the official PyTorch implementation of WaveLiteDehaze-Network (WLD-Net).  
